@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+#bodytipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/kids.jpg);
+    background-size: cover;
+}
+
+#box{
+    height: 100vh;
+    width: 80%;
+    margin: 0 10%;  
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 150;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fundoescuro{
+    height: 100vh;
+    width: 100%;    
+    background-color: rgba(0, 24, 39,0.5)
+}
+
+header h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 162%;
+    margin-top: 2%;
+    transition: 2s;
+}
+
+.animatitulo:hover{
+    transform: scale(2)
+
+}
+
+header h2{
+    line-height: 110%;
+    font-weight: 100;
+    overflow-y: hidden;
+    font-size: 162%;
+}
+
+header h3{
+    font-weight: 300;
+    font-family: 'Comfortaa', cursive;
+    font-size: 80%;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao1{
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #001827;
+    padding: 2% 11%;
+    border-radius: 2em;
+    margin-bottom: 50px;
+}
+
+.botao2{
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #001827;
+    padding: 2% 11%;
+    border-radius: 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.botao1:hover{
+    background-color: #001827;
+    color: white;
+}
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudomodal{
+    height: 50vh;
+    width: 80vw;
+    background-color: lightgrey;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: white 3px 3px;
+}
+
+.closemodal{
+    position: fixed;
+    top: 1%;
+    right: 5%;
+}
+
+.input{
+    height: 30px;
+    width: 70%;
+    color:black;
+    border-radius: 2em;
+}
+
+@media(min-width:850px){
+    header h2{
+        line-height: 110%;
+        font-weight: 100;
+        overflow-y: hidden;
+        font-size: 190%;
+    }
+
+    header h3{
+        font-weight: 300;
+        font-family: 'Comfortaa', cursive;
+        font-size: 150%;
+    }
+    .botao1{
+        text-align: center;
+        background-color: white;
+        color: #001827;
+        padding: 1% 4%;
+        border-radius: 2em;
+        margin-bottom: 50px;
+    }
+}
